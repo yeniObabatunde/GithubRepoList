@@ -18,15 +18,21 @@ This is a simple iOS app that fetches data from the [GitHub Repositories API](ht
 **Screenshots**
 **Main View Controller**
 
-.![dashboard](https://github.com/user-attachments/assets/21969e9f-d9de-4596-a99f-fedc62a8d0cc)
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/21969e9f-d9de-4596-a99f-fedc62a8d0cc" alt="dashboard" width="200">
+</div>
 
 **Details View Controller**
-.![details](https://github.com/user-attachments/assets/69360927-c78b-4df6-ad65-11523b66cdf7)
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/69360927-c78b-4df6-ad65-11523b66cdf7" alt="details" width="200">
+</div>
 
 **App Functionality (GIF)**
-.![gif](https://github.com/user-attachments/assets/9f08639c-0e32-4a69-aa2f-b7013123a389)
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9f08639c-0e32-4a69-aa2f-b7013123a389" alt="gif" width="200">
+</div>
 
 ## Tech Stack  
 - **Programming Language:** *Swift*  

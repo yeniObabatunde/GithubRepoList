@@ -1,0 +1,34 @@
+//
+//  AppDelegate.swift
+//  GithubProfiles
+//
+//  Created by Sharon Omoyeni Babatunde on 01/01/2025.
+//
+
+import UIKit
+import IQKeyboardManagerSwift
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        handleKeyboardDismissal()
+        return true
+    }
+
+    func handleKeyboardDismissal() {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.keyboardAppearance = .default
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+    }
+    // MARK: UISceneSession Lifecycle
+
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+    }
+
+}
+

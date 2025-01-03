@@ -52,9 +52,6 @@ This is a simple iOS app that fetches data from the [GitHub Repositories API](ht
 3. Ensure your environment is set up with the **latest version of Xcode**.  
 4. Build and run the app on a simulator or physical device.  
 
-## Screenshots  
-Include relevant screenshots or GIFs demonstrating the app’s key functionalities.  
-
 ## Future Improvements  
 - Add unit tests to validate the app’s functionalities.  
 - Extend caching to allow data expiration and refresh automatically.  

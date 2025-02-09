@@ -52,6 +52,15 @@ This is a simple iOS app that fetches data from the [GitHub Repositories API](ht
 3. Ensure your environment is set up with the **latest version of Xcode**.  
 4. Build and run the app on a simulator or physical device.  
 
+![snake gif](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.gif)
+
 ## Future Improvements  
 - Add unit tests to validate the app’s functionalities.  
 - Extend caching to allow data expiration and refresh automatically.  
+
+
+
+
+
+
+

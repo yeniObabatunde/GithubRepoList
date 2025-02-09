@@ -2,12 +2,12 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *" # Runs every 6 hours
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: macos-latest # ✅ Run on macOS
+    runs-on: macos-latest # ✅ Run on macOS to match your local setup
 
     steps:
       - name: Checkout repository
@@ -26,23 +26,18 @@ jobs:
         id: snake-gif
         with:
           github_user_name: yeniObabatunde
-          gif_out_path: dist/github-contribution-grid-snake.gif
-          svg_out_path: dist/github-contribution-grid-snake.svg
+          gif_out_path: github-contribution-grid-snake.gif
+          svg_out_path: github-contribution-grid-snake.svg
 
       - name: Show git status
         run: git status
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
-          force: true
-
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.1.3
-        with:
-          target_branch: output
-          build_dir: dist
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git add github-contribution-grid-snake.gif github-contribution-grid-snake.svg
+          git commit -m "Updated contribution snake" || echo "No changes to commit"
+          git push origin HEAD:$(git rev-parse --abbrev-ref HEAD)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
